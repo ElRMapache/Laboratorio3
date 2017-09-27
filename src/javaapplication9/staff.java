@@ -4,13 +4,15 @@
  * and open the template in the editor.
  */
 package javaapplication9;
+import javax.swing.JOptionPane;
+
 
 /**
  *
  * @author andyq
  */
 public class staff extends javax.swing.JPanel {
-
+doctors doc = new doctors();
     /**
      * Creates new form staff
      */
@@ -27,19 +29,140 @@ public class staff extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jPanel1 = new javax.swing.JPanel();
+        juanButton = new javax.swing.JButton();
+        luisButton = new javax.swing.JButton();
+        eduardoButton = new javax.swing.JButton();
+        guadalupeButton = new javax.swing.JButton();
+        mariaButton = new javax.swing.JButton();
+        marielaButton = new javax.swing.JButton();
+        lornaButton = new javax.swing.JButton();
+        miriamButton = new javax.swing.JButton();
+        lidiaButton = new javax.swing.JButton();
+        juanaButton = new javax.swing.JButton();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        txtStaffChar = new javax.swing.JTextArea();
+
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Doctores", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 1, 14))); // NOI18N
+
+        juanButton.setText("Juan Perez");
+        juanButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                juanButtonActionPerformed(evt);
+            }
+        });
+
+        luisButton.setText("Luis Gutierrez");
+
+        eduardoButton.setText("Eduardo Gonzales");
+
+        guadalupeButton.setText("Guadalupe Torres");
+
+        mariaButton.setText("Maria Castillo");
+
+        marielaButton.setText("Mariela Rodriguez");
+
+        lornaButton.setText("Lorna Suarez");
+
+        miriamButton.setText("Miriam Garcia");
+
+        lidiaButton.setText("Lidia Mendez");
+
+        juanaButton.setText("Juana Lopez");
+
+        txtStaffChar.setColumns(20);
+        txtStaffChar.setRows(5);
+        jScrollPane1.setViewportView(txtStaffChar);
+
+        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
+        jPanel1.setLayout(jPanel1Layout);
+        jPanel1Layout.setHorizontalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addComponent(juanaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lidiaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(miriamButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(lornaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(luisButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(eduardoButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 159, Short.MAX_VALUE)
+                    .addComponent(guadalupeButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(mariaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(marielaButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(juanButton, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 368, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(juanButton)
+                .addGap(18, 18, 18)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(luisButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(eduardoButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(guadalupeButton)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(mariaButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(marielaButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(lornaButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(miriamButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(lidiaButton)
+                        .addGap(18, 18, 18)
+                        .addComponent(juanaButton))
+                    .addComponent(jScrollPane1))
+                .addGap(109, 109, 109))
+        );
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 544, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 528, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
     }// </editor-fold>//GEN-END:initComponents
 
+    private void juanButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_juanButtonActionPerformed
+        int button = 1;
+        doc.getChar(button);
+        String name = doc.getName();
+        String nit = doc.getNit();
+        String dpi = doc.getDPI();
+        String col = doc.getCOL();
+        int sal = doc.getSAL();
+        String esp = doc.getStatus();
+
+        txtStaffChar.setText(" El/La Doctor(a) " + name + " tiene el nit " + nit + ". Su DPI es " + dpi + " y su colegiado es el numero " + col + ". Su salario actual es de " + sal + " y " + esp + " es especialista.");
+    }//GEN-LAST:event_juanButtonActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton eduardoButton;
+    private javax.swing.JButton guadalupeButton;
+    private javax.swing.JPanel jPanel1;
+    private javax.swing.JScrollPane jScrollPane1;
+    private javax.swing.JButton juanButton;
+    private javax.swing.JButton juanaButton;
+    private javax.swing.JButton lidiaButton;
+    private javax.swing.JButton lornaButton;
+    private javax.swing.JButton luisButton;
+    private javax.swing.JButton mariaButton;
+    private javax.swing.JButton marielaButton;
+    private javax.swing.JButton miriamButton;
+    private javax.swing.JTextArea txtStaffChar;
     // End of variables declaration//GEN-END:variables
 }
